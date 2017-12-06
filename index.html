@@ -1,0 +1,186 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gardiuno website</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Gardunio</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#info1">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="showcase-left">
+              <img src="images/image1.jpeg">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="showcase-right" id="ScrollDiv">
+              <h1>Hands-free help from  our product</h1>
+              <p>Our most awaited product is going out soon which will meets up all your gardening help.Obviously saves your precious time.
+              </p>
+            </div>
+            <br>
+            <a class="btn btn-default btn-lg showcase-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonial">
+      <div class="container">
+        <p>Like any good “lazy programmer,” I’m always looking for ways to automate. This spring’s project: monitoring and watering my garden. I had a wifi-enabled Raspberry Pi laying around and decided to put it to good use. For this project I wanted to do better than just a glorified timer. The goal: An automated watering system that can use the weather forecast, soil, light, and temperature sensors to keep my garden looking great all summer.</p>
+        <p class="ideal">- SHAWN ANDERSON</p>
+      </div>
+    </section>
+
+
+    <section id="info1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="info-left">
+              <img src="images/image2.png">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="info-right">
+              <h2>Sensors we Used for your Convenice</h2>
+              <p>Basically, information from a plantation will be captured various sensors, like air temperature, soil temperture and many more to covr the surrounding environment of garden.
+              </p>
+              <br>
+              <a class="btn btn-default btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section id="info2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 ">
+            <div class="info-left">
+              <h2>Garden Care with  our product</h2>
+              <p>
+                <ul>
+                  <li>Air Tempurature</li>
+                  <li>Air Relative Humidity</li>
+                  <li>Soil Temperature</li>
+                  <li>Soil Moisture (Humidity)</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="info-right">
+              <h2>Specification</h2>
+              <p>Automatic messages will sent to your mobile app as much as this product come with fine display screen which represents  digital and analog values which would be great assistance. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-5 col-xs-12">
+            <form>
+              <div class="form-group">
+                <label>Name: </label>
+                <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label>Email: </label>
+                <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label>Message: </label>
+                <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
+              </div>
+              <button class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-7 col-sm-7">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+   
+    <footer>
+      <p class="text-center">Gardiuno Copyright &copy; 2017</p>
+    </footer>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script>
+    (function() {
+  "use strict";
+  console.log("SEAF Fired");
+  
+  //varibales
+var top = document.querySelector('#ScrollDiv');
+var yPos = window.pageYOffset;
+function Scroll () {
+  if(yPos > 200 ) {
+    top.style.height = "170px"; 
+
+  }
+  else{
+    top.style.height = "150px";
+  }
+}
+
+  
+  //functions
+  
+  //listeners 
+window.addEventListener("scroll", Scroll, false);
+  
+    });
+
+
+
+
+})();
+   
+    </script>
+  </body>
+</html>
